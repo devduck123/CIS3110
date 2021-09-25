@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" id="tommyho">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/f03351eb9c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Tommy Ho</title>
+  </head>
+  <body>
+    <header>
+      <div id="intro">
+        <h1>Hello World, my name is Tommy Ho.</h1>
+      </div>
+    </header>
+
+    <nav id="menu-list">
+      <!-- TODO: add tommy's link -->
+      <!-- TODO: add JS to link???  -->
+      <div id="menu-toggle">
+        Menu
+        <a class="menu-item" href="#"
+          ><button class="menu-button">Home</button></a
+        >
+        <a
+          class="menu-item"
+          href="https://devduck123.hashnode.dev/"
+          target="_blank"
+          ><button class="menu-button">Blog</button></a
+        >
+        <a
+          class="menu-item"
+          href="https://github.com/devduck123"
+          target="_blank"
+          ><button class="menu-button">GitHub</button></a
+        >
+      </div>
+    </nav>
+
+    <main>
+      <div id="currency_converter">
+        <h2>Real-Time Currency Converter</h2>
+        <form>
+          <h2>
+            <i>[ Currency Base: <span id="currency_base">EUR</span> ]</i>
+          </h2>
+          <label for="currency">Enter a currency:</label>
+          <input
+            id="currency"
+            type="text"
+            placeholder="USD, AUD, CAD, JPY"
+            autocomplete="off"
+          />
+
+          <input id="currency_submit" type="submit" value="Convert" />
+        </form>
+
+        <div id="currency_result"></div>
+
+        <p>
+          Data retrieved from API via
+          <a id="api-host" href="https://exchangeratesapi.io/" target="_blank"
+            >exchangeratesapi.io</a
+          >
+        </p>
+      </div>
+
+      <div id="info">
+        <h2>About Me</h2>
+        <ul id="info-list">
+          <li class="info-item">Located in the Bay Area</li>
+          <li class="info-item">
+            Graduating from California-Polytechnic Pomona in 2022
+          </li>
+          <li class="info-item">
+            BS in Business Administration - Computer Information Systems
+          </li>
+          <li class="info-item">
+            Overall Goal: Develop software from frontend-to-backend
+          </li>
+        </ul>
+      </div>
+
+      <div id="skills">
+        <h2>Skills</h2>
+        <div class="skills-list">
+          <div class="skills-item">
+            <span class="skills-name">HTML</span>
+            <i class="fab fa-html5 fa-5x"></i>
+          </div>
+          <div class="skills-item">
+            <span class="skills-name">CSS</span>
+            <i class="fab fa-css3-alt fa-5x"></i>
+          </div>
+          <div class="skills-item">
+            <span class="skills-name">Java</span>
+            <i class="fab fa-java fa-5x"></i>
+          </div>
+          <div class="skills-item">
+            <span class="skills-name">JavaScript</span>
+            <i class="fab fa-js-square fa-5x"></i>
+          </div>
+          <div class="skills-item">
+            <span class="skills-name">SQL</span>
+            <i class="fas fa-database fa-5x"></i>
+          </div>
+          <div class="skills-item">
+            <span class="skills-name">Git</span>
+            <i class="fab fa-git-alt fa-5x"></i>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="tommyho.js"></script>
+  </body>
+</html>
