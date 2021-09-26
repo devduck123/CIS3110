@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let name = document.querySelector("#name").value;
     let number = document.querySelector("#number").value;
 
+    // remove whitespace
     let userID = (name + "" + number).replace(/\s+/g, "");
 
     document.querySelector("#user-id").innerHTML =
@@ -16,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let name = document.querySelector("#name").value;
     let number = document.querySelector("#number").value;
 
+    // remove whitespace
     let userID = (name + "" + number).replace(/\s+/g, "");
 
     document.querySelector("#user-id").innerHTML =
@@ -28,6 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let name = document.querySelector("#name").value;
     let number = document.querySelector("#number").value;
 
+    // remove whitespace
     let userID = (name + "" + number).replace(/\s+/g, "");
 
     document.querySelector("#user-id").innerHTML =
