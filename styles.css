@@ -86,7 +86,7 @@
 }
 
 .menu-button:hover,
-#currency_submit:hover {
+#currency_submit:hover, #btn-prompt:hover {
   background-color: var(--secondary-color);
   transform: translateY(4px);
   text-decoration: underline;
@@ -132,6 +132,34 @@
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
   margin-top: 2%;
   margin-bottom: 8%;
+  font-family: "Rubik", sans-serif;
+}
+
+#btn-prompt {
+  font-size: 0.8rem;
+  box-shadow: 2px 4px 0px 0px var(--secondary-color) !important;
+  background: transparent;
+  border-radius: 10px;
+  border: 1px solid var(--secondary-color) !important;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  color: var(--primary-color);
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px var(--primary-color);
+  margin: 0.3em 0.4em 0.3em 0.4em;
+  padding: 0.4em;
+  transition: 0.6s ease-in-out;
+  max-width: 50%;
+  margin-left: 25%;
+}
+
+#btn-prompt:hover {
+  text-decoration: none;
+  transform: scale(1.15);
 }
 
 #user-id {
@@ -141,6 +169,7 @@
   word-wrap: break-word;
   text-align: center;
   margin-top: 8%;
+  margin-bottom: 8%;
   font-size: 1.2rem;
   color: rgb(123, 28, 212);
   padding: 2%;
@@ -193,6 +222,7 @@
   text-align: center;
   border: 1px solid var(--primary-color);
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+  font-family: "Rubik", sans-serif;
 }
 
 #currency_converter > p {

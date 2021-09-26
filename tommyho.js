@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let userID = (name + "" + number).replace(/\s+/g, "");
 
-    document.querySelector("#user-id").innerHTML = userID;
+    document.querySelector("#user-id").innerHTML = "Hello, your username is: " + userID;
     document.querySelector("#user-id").style.display = "block";
   };
 
@@ -17,8 +17,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let userID = (name + "" + number).replace(/\s+/g, "");
 
-    document.querySelector("#user-id").innerHTML = userID;
+    document.querySelector("#user-id").innerHTML = "Hello, your username is: " + userID;
     document.querySelector("#user-id").style.display = "block";
+  };
+
+  // live loading for userID via #prompt
+  document.querySelector("#prompt").onkeyup = () => {
+    let name = document.querySelector("#name").value;
+    let number = document.querySelector("#number").value;
+
+    let userID = (name + "" + number).replace(/\s+/g, "");
+
+    document.querySelector("#user-id").innerHTML = "Hello, your username is: " + userID;
+    document.querySelector("#user-id").style.display = "block";
+  };
+
+  document.querySelector("#btn-prompt").onclick = () => {
+    let promptInput = document.querySelector("#prompt").value;
+    promptInput = promptInput[0].toUpperCase();
+    console.log(promptInput[0]);
+
+    if (promptInput.toString() === 'Y') {
+        console.log("FIND OUT MORE!");
+        document.querySelector("#more-info").style.display = "block";
+    }
   };
 
   document.querySelector("form").onsubmit = () => {
