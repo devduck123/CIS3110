@@ -76,9 +76,8 @@ document.addEventListener("DOMContentLoaded", () => {
             "Unable to convert that currency.";
         }
       })
-
-      // catch errors with fetching API
       .catch((error) => {
+        // catch any errors with fetching API
         console.log("Error: ", error);
       });
 
