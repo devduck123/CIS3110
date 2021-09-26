@@ -112,6 +112,40 @@
   max-width: 80%;
 }
 
+#homework {
+  display: grid;
+  place-content: center;
+  margin-top: 3em;
+  padding: 1.6em;
+  border-radius: 10px;
+  box-shadow: 0 0 1em rgba(0, 0, 0.2);
+  overflow: hidden;
+  max-width: 90%;
+}
+
+#homework > * {
+  text-align: center;
+}
+
+#homework > input {
+  border: 1px solid var(--primary-color);
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+  margin-top: 2%;
+  margin-bottom: 8%;
+}
+
+#user-id {
+  border-radius: 4%;
+  box-shadow: 0 0 .2em rgb(0, 0, 0.1);
+  overflow: hidden;
+  word-wrap: break-word;
+  text-align: center;
+  margin-top: 8%;
+  font-size: 1.2rem;
+  color: rgb(123, 28, 212);
+  padding: 2%;
+}
+
 #currency_converter {
   margin-top: 3em;
   padding: 1.6em;
